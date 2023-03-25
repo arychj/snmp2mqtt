@@ -1,6 +1,6 @@
 {
     "name": "snmp2mqtt",
-    "version": "0.2.9",
+    "version": "0.2.10",
     "license": "MIT",
     "bin": {
         "snmp2mqtt": "dist/index.js"
