@@ -114,7 +114,7 @@ export const createClient = async (
             `${config.base_topic}/${config.target_name_as_topic && target.name ? slugify(target.name) : target.host}/${slugify(sensor.name)}/status`,
         sensorValueTopic: (sensor: SensorConfig, target: TargetConfig) =>
             `${config.base_topic}/${config.target_name_as_topic && target.name ? slugify(target.name) : target.host}/${slugify(sensor.name)}/value`,
-        STATUS_TOPIC: '`${config.base_topic}/${STATUS_TOPIC}`,
+        STATUS_TOPIC: `${config.base_topic}/${STATUS_TOPIC}`,
         ONLINE,
         OFFLINE,
         on: (event: "close" | "connect", cb: () => void) =>
